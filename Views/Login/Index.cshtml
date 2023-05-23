@@ -1,0 +1,27 @@
+﻿@model MVC_Assessment.Controllers.LoginController
+@{
+    ViewData["Title"] = "Login";
+}
+@{
+    <h1>Login</h1>
+
+
+    <div>
+
+        <form >
+             @Html.Label("UserName ")
+            @Html.TextBoxFor(m => m.UserName)
+        </form>
+
+        <form>
+
+            @Html.Label("Password")
+         
+            @Html.TextBoxFor(m => m.Password)
+        </form>
+        <form asp-action="Login">
+            <input type="submit" value="Login" class="btn btn-primary" /> |
+
+        </form>
+    </div>
+}
